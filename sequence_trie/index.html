@@ -43,16 +43,23 @@
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>sequence_trie</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
             <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/sequence_trie/lib.rs.html#1-324'>[src]</a></span></h1>
+        </span><a id='src-0' href='../src/sequence_trie/lib.rs.html#1-398'>[src]</a></span></h1>
 <div class='docblock'><p>Sequence Trie - a trie-like data-structure for storing sequences of values.</p>
 
 <p>See the <code>SequenceTrie</code> type for documentation.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                     <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Iter.html'
+                               title='sequence_trie::Iter'>Iter</a></td>
+                        <td class='docblock short'><p>Iterator over the keys and values of a <code>SequenceTrie</code>.</p>
+</td>
+                    </tr>
+                
+                    <tr>
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Keys.html'
                                title='sequence_trie::Keys'>Keys</a></td>
-                        <td class='docblock short'><p>An iteterator over the keys of a <code>SequenceTrie</code>.</p>
+                        <td class='docblock short'><p>Iterator over the keys of a <code>SequenceTrie</code>.</p>
 </td>
                     </tr>
                 
@@ -60,6 +67,21 @@
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SequenceTrie.html'
                                title='sequence_trie::SequenceTrie'>SequenceTrie</a></td>
                         <td class='docblock short'><p>A <code>SequenceTrie</code> is recursively defined as a value and a map containing child Tries.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Values.html'
+                               title='sequence_trie::Values'>Values</a></td>
+                        <td class='docblock short'><p>Iterator over the values of a <code>SequenceTrie</code>.</p>
+</td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.KeyValuePair.html'
+                               title='sequence_trie::KeyValuePair'>KeyValuePair</a></td>
+                        <td class='docblock short'><p>Vector of key fragment references and values, yielded during iteration.</p>
 </td>
                     </tr>
                 </table></section>
