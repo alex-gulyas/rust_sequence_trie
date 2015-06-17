@@ -357,10 +357,22 @@
 <span id="315">315</span>
 <span id="316">316</span>
 <span id="317">317</span>
+<span id="318">318</span>
+<span id="319">319</span>
+<span id="320">320</span>
+<span id="321">321</span>
+<span id="322">322</span>
+<span id="323">323</span>
+<span id="324">324</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! Sequence Trie - a trie-like data-structure for storing sequences of values.</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! See the `SequenceTrie` type for documentation.</span>
+
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>all</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>test</span>), <span class='ident'>feature</span>(<span class='ident'>test</span>))]</span>
+
+<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>all</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>test</span>))]</span>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>test</span> <span class='kw'>as</span> <span class='ident'>std_test</span>;
 
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>hash</span>::<span class='ident'>Hash</span>;
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>collections</span>::<span class='ident'>hash_map</span>::{<span class='self'>self</span>, <span class='ident'>HashMap</span>, <span class='ident'>Entry</span>};
@@ -369,6 +381,8 @@
 
 <span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>test</span>)]</span>
 <span class='kw'>mod</span> <span class='ident'>test</span>;
+<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>all</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>test</span>))]</span>
+<span class='kw'>mod</span> <span class='ident'>benchmark</span>;
 
 <span class='doccomment'>/// A `SequenceTrie` is recursively defined as a value and a map containing child Tries.</span>
 <span class='doccomment'>///</span>
